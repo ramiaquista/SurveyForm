@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title" class="text-center">Microverse Survey Form</h1>
+      <p id="description" class="desciption text-center">
+        This is a survey form for Microverse Survey Pair Programming Challenges
+      </p>
+    </header>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name </label>
+          <input id="name" placeholder="Enter your Name" type="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email </label>
+          <input id="email" placeholder="Enter your email" type="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="Role" class="form-control">
+            <option disable selected value>Select Current Role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Microverse to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked=""
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            placeholder="Enter your comment here..."
+            class="input-textarea"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
